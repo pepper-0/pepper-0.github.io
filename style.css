@@ -1,14 +1,72 @@
+/*default all elements to have a margin/padding value of 0*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 /* STYLE SECTIONING TAGS */
 body {
- background-color: lightcyan; 
+ background-color: #EBFAFF; 
+}
+
+main{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10%;
+  margin-left: 10%;
+  
 }
 
 /* STYLE TEXT */
 
-h1 {
-  color: navy;
+h3 {
+  color: #402d4d;
+  font-family: Courier New, monospace;
+  padding: 10px;
+}
+
+p{
+  font-family: Monaco, monospace;
+  padding: 10px;
+}
+
+li{
+  font-family: Monaco, monospace;
+  /*padding-left: 30px;*/
+}
+
+section {
+  border-style: groove;
+  border-radius: 20px;
+  background-color: #beb5c4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 40px
+}
+
+
+#right-text{
+  text-align: right;
 }
 
 /* STYLE IMAGES */
+#round{
+  border-radius: 50%;
+  border: 3px groove white;
+  margin: 10px;
+}
+
 
 /* STYLE NAV BAR */
+nav{
+  border-style: groove;
+  background-color: #7f8b7e;
+  color: #E0F5E6
+}
+
