@@ -18,6 +18,7 @@ main{
   
 }
 
+
 /* STYLE TEXT */
 
 h3 {
@@ -50,13 +51,17 @@ section ul {
   padding-left: 40px
 }
 
+#leftText {
+  text-align: left;
+  margin-left: 20px
+}
 
-#right-text{
+.rightText{
   text-align: right;
 }
 
 /* STYLE IMAGES */
-#round{
+.round{
   border-radius: 50%;
   border: 3px groove white;
   margin: 10px;
@@ -67,6 +72,25 @@ section ul {
 nav{
   border-style: groove;
   background-color: #7f8b7e;
-  color: #E0F5E6
+  color: #E0F5E6;
+  text-align: center;
+  
+}
+#navUL {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 20px;
+}
+li {
+  display: inline;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+}
+li a:hover {
+  background-color: #a0b29f;
 }
 
