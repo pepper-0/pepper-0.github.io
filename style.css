@@ -4,9 +4,42 @@
   padding: 0px;
 }
 
+/* STYLE NAV BAR */
+nav{
+  border-style: groove;
+  background-color: #7f8b7e;
+  color: #E0F5E6;
+  text-align: center;
+
+}
+#navUL {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 10px;
+}
+li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.0em;
+  padding: 5px;
+}
+li a:hover {
+  background-color: #a0b29f;
+}
+
+
 /* STYLE SECTIONING TAGS */
+
 body {
- background-color: #EBFAFF; 
+  /*image created with Colorffy's Mesh Gradient generator, implemented with the help of Copilot & W3Schools*/
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main{
@@ -16,6 +49,14 @@ main{
   margin-right: 10%;
   margin-left: 10%;
   
+}
+
+section {
+  border-style: groove;
+  border-radius: 20px;
+  background-color: #beb5c4;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -32,23 +73,20 @@ p{
   padding: 10px;
 }
 
-li{
+/* ABOUT ME STYLING */
+section li{
   font-family: Monaco, monospace;
-  /*padding-left: 30px;*/
+  padding-left: 30px;
+  text-align: left;
+  display: block;
 }
-
-section {
-  border-style: groove;
-  border-radius: 20px;
-  background-color: #beb5c4;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-
 section ul {
   list-style-type: disc;
-  padding-left: 40px
+  padding-left: 40px;
+  text-align: left;
+}
+section p {
+  text-align: left;
 }
 
 #leftText {
@@ -68,29 +106,4 @@ section ul {
 }
 
 
-/* STYLE NAV BAR */
-nav{
-  border-style: groove;
-  background-color: #7f8b7e;
-  color: #E0F5E6;
-  text-align: center;
-  
-}
-#navUL {
-  list-style-type: none;
-  overflow: hidden;
-  padding: 20px;
-}
-li {
-  display: inline;
-}
-li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px;
-}
-li a:hover {
-  background-color: #a0b29f;
-}
 
