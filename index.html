@@ -16,54 +16,50 @@
   
     </head>
 
-
-    <img src = "assets/fireflies.jpg" alt = "Image from Grave of the Fireflies (1988)" height = 200/>
-    <!-- nav bar -->
-    <nav>
-      <ul id = "navUL">
-        <li>
-          <a href = index.html>Home</a>
-        </li>
-        <li>
-          <a href = about.html>About Me</a>
-        </li>
-        <li>
-          <a href = fiber_arts.html>Fiber  Arts Portfolio</a>
-        </li>
-        <li>
-          <a href = code.html>Code Projects</a>
-        </li>
-      </ul>
-    </nav>
+    <div> <!-- used on all pages as the header image + nav bar -->
+      <img class = "header" src = "assets/fireflies.jpg" alt = "Image from Grave of the Fireflies (1988)"> 
+      <nav>
+        <ul id = "navUL">
+          <li>
+            <a href = index.html>Home</a>
+          </li>
+          <li>
+            <a href = about.html>About Me</a>
+          </li>
+          <li>
+            <a href = fiber_arts.html>Fiber  Arts Portfolio</a>
+          </li>
+          <li>
+            <a href = code.html>Code Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
   
     
     <main>
       <section>
-        <h3 id = "leftText"> ⋆.˚✮🎧✮˚.⋆ 你好，我是梁靜悠 . . .</h3>
+        <h3 class = "leftText"> ⋆.˚✮🎧✮˚.⋆ 你好，我是梁靜悠 . . .</h3>
         <img class = "round" src = "assets/profile.jpg" alt = "image of myself" height = 200>
         <p class = "rightText">hello, i'm jana 🇭🇰 !</p>
         <p class = "rightText"> current mood: <img class = "round" src = "assets/snoopy.jpg" alt = "snoopy but megamind shaped" width = 80 height = 80/></p>
       </section>
       
-      <section>
-        <p>public class Jana {</p>
+      <section >
+        <p class = "codeFont">public class Jana {</p>
   
-        <ul>
-          <li>Sport recreational = new Sport("taekwondo", "purple belt", "2 years");</li>
-          <li>Hobby fiberArts = new Hobby("crochet, knitting, sewing", ""(i know, i've fulfilled the entire trifecta!)")</li>
-          <li>String favoriteStuffedAnimal = "juju";</li>
-          <li>String jujuReason = "mom doesn't let me have pets D:";</li>
-          <li>Subject interest = new Subject("computer science");</li>
-          <li>String compSciReason = "granted, i only like it 20% of the time (aka when things work out perfectly and don't get messy";</li>
-          <li>String[] languages = ["English", "Cantonese", "Mandarin", "Java", "Python", "HTML", "CSS", "Unity"]; // okay unity is not really a language but i spent a long time wrangling it and C# is close enough to java....right?</li>
+        <ul >
+          <li class = "codeFont">Sport recreational = new Sport("taekwondo", "purple belt");</li>
+          <li class = "codeFont">Hobby fiberArts = new Hobby("crochet, knitting, sewing", "(i know, i've fulfilled the entire trifecta!)")</li>
+          <li class = "codeFont">Subject futureMajor = new Subject("computational biology");</li>
+          <li class = "codeFont">String[] languages = ["English", "Cantonese", "Mandarin", "Java", "Python", "HTML", "CSS", "Unity"]; // okay unity is not really a language but i spent a long time wrangling it and C# is close enough to java....right?</li>
         </ul>
-
-        <p>}</p>
-        
-        <p> /* side tangent, i'm making this site cause i want a personal website + it's a girls who code project! surprisingly, it hasn't been going TOO awful.. yet. */</p>
+        <p class = "codeFont">}</p>
+        <p class = "codeFont"> /* side tangent, i'm making this site cause i want a personal website + it's a girls who code project! surprisingly, it hasn't been going TOO awful.. yet. */</p>
       </section>
   
-      <p>⋘ 𝑙𝑜𝑎𝑑𝑖𝑛𝑔 𝑑𝑎𝑡𝑎... ⋙</p>
+      <p>⋘ loading... ⋙</p>
   
     </main>
   </body>

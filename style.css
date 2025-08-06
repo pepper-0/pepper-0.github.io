@@ -2,12 +2,25 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-family: Monaco, Monospace;
+  color: #402d4d;
+}
+
+/* HEADER STYLING */
+.header {
+  /*code courtesy of Copilot instructions*/
+  width:100%; /* makes it take up 100% of the screen's width*/
+  height: 150px; 
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  
 }
 
 /* STYLE NAV BAR */
 nav{
   border-style: groove;
-  background-color: #7f8b7e;
+  background-color: #56675c;
   color: #E0F5E6;
   text-align: center;
 
@@ -34,14 +47,12 @@ li a:hover {
 
 
 /* STYLE SECTIONING TAGS */
-
 body {
   /*image created with Colorffy's Mesh Gradient generator, implemented with the help of Copilot & W3Schools*/
   background-image: url("assets/background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 main{
   text-align: center;
   margin-top: 0;
@@ -50,7 +61,6 @@ main{
   margin-left: 10%;
   
 }
-
 section {
   border-style: groove;
   border-radius: 20px;
@@ -59,23 +69,42 @@ section {
   margin-bottom: 10px;
 }
 
-
-/* STYLE TEXT */
-
-h3 {
-  color: #402d4d;
-  font-family: Courier New, monospace;
+/*STYLE PORTFOLIOS*/
+section a {
+  border-color: #d4d0d8;
+  border-width: 2px;
+  border-style: double;
   padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+section a:hover, a:active {
+  background-color: #d4d0d8;
 }
 
-p{
-  font-family: Monaco, monospace;
+/* STYLE TEXT */
+h3 {
   padding: 10px;
+}
+p{
+  padding: 10px;
+}
+.codeFont {
+  font-family: Courier New, Monospace;
+}
+.leftText {
+  text-align: left;
+  margin-left: 20px
+}
+.rightText{
+  text-align: right;
+}
+.centerText{
+  text-align: center;
 }
 
 /* ABOUT ME STYLING */
 section li{
-  font-family: Monaco, monospace;
   padding-left: 30px;
   text-align: left;
   display: block;
@@ -89,14 +118,6 @@ section p {
   text-align: left;
 }
 
-#leftText {
-  text-align: left;
-  margin-left: 20px
-}
-
-.rightText{
-  text-align: right;
-}
 
 /* STYLE IMAGES */
 .round{
@@ -104,6 +125,3 @@ section p {
   border: 3px groove white;
   margin: 10px;
 }
-
-
-
