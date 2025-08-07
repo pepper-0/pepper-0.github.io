@@ -68,6 +68,13 @@ section {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.subSection {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30%;
+  margin-left: 30%;
+  background-color: #d4d0d8;
+}
 
 /*STYLE PORTFOLIOS*/
 section a {
@@ -84,21 +91,22 @@ section a:hover, a:active {
 .portfolioImg {
   display: inline-block;
   margin: auto;
-  width: 30%;
-  height: 25%;
+  height: 300px;
+  width: auto;
+  object-fit: cover;
   margin: 10px;
   border-radius: 10px;
 }
 /* code adapted from W3Schools example/tutorial*/
 div.gallery {
   display: inline;
-  margin: 5px;
+  margin: 3px;
   border: 2px groove #ffffff;
   background-color: #d4d0d8;
   float: left;
   border-radius: 20px;
-  width: 25%;
-  height: 50%;
+  width: 23%;
+  height: auto;
 }
 div.desc {
   padding: 15px;
@@ -117,7 +125,7 @@ p{
 }
 .leftText {
   text-align: left;
-  margin-left: 20px
+  margin-left: 20px;
 }
 .rightText{
   text-align: right;
@@ -141,10 +149,10 @@ section p {
   text-align: left;
 }
 
-.aboutImg {
+.galleryImg {
   margin: auto;
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: auto;
   margin: 5px;
   border-radius: 10px;
 }

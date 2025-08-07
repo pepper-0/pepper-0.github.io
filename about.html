@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <body>
+    <head>
+  
+      <title>About</title>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+      <!-- link the webpage's stylesheet -->
+      <link rel="stylesheet" href="/style.css" />
+  
+      <!-- link the webpage's JavaScript file -->
+      <script src="/script.js" defer></script>
+  
+    </head>
+  
+    <div> <!-- used on all pages as the header image + nav bar -->
+      <img class = "header" src = "assets/fireflies.jpg" alt = "Image capture from Grave of the Fireflies (1988). Depicts scene of  Seita Yokokawa (protagonist) carrying Setsuko (younger sister) in a wagon across a rice paddy, with a blue sky in the background">     <nav>
+        <ul id = "navUL">
+          <li>
+            <a href = index.html>Home</a>
+          </li>
+          <li>
+            <a href = about.html>About Me</a>
+          </li>
+          <li>
+            <a href = fiber_arts.html>Fiber  Arts Portfolio</a>
+          </li>
+          <li>
+            <a href = code.html>Code Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <title>About</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- link the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- link the webpage's JavaScript file -->
-    <script src="/script.js" defer></script>
-
-  </head>
-
-  <div> <!-- used on all pages as the header image + nav bar -->
-    <img class = "header" src = "assets/fireflies.jpg" alt = "Image capture from Grave of the Fireflies (1988). Depicts scene of  Seita Yokokawa (protagonist) carrying Setsuko (younger sister) in a wagon across a rice paddy, with a blue sky in the background">     <nav>
-      <ul id = "navUL">
-        <li>
-          <a href = index.html>Home</a>
-        </li>
-        <li>
-          <a href = about.html>About Me</a>
-        </li>
-        <li>
-          <a href = fiber_arts.html>Fiber  Arts Portfolio</a>
-        </li>
-        <li>
-          <a href = code.html>Code Projects</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <main>
-    <h3>wanna know more about me?</h3>
-    <p> you've come to the right place!</p>
-    <!-- image gallery -->
+    <main>
+      <h3>wanna know more about me?</h3>
+      <p> you've come to the right place!</p>
+      <!-- image gallery -->
       <div class = "gallery">
-        <img class = "aboutImg" src="assets/about/beach.jpg" alt = "Image of me at a beach in San Diego, facing the sea ocean with my side turned towards the camera">
-        <img class = "aboutImg"  src="assets/about/crashout.jpg" alt = "Selfie of myself and my friend, where I'm caught midway through moving my head towards the camera creating a blurred effect">
-        <img class = "aboutImg"  src="assets/about/outfit.jpg" alt = "Selfie of my outfit, wearing blue wide-leg jeans and a gray ringer tee, plus a shoulder bag.">
-        <img class = "aboutImg"  src="assets/about/rome.jpg" alt = "0.5 angle selfie of myself on one of the highest levels of the Colosseum, wearing a gray shirt and white pants. The uppper left corner shows a view of the insider of the Colosseum.">
+        <img class = "galleryImg" src="assets/about/beach.jpg" alt = "Image of me at a beach in San Diego, facing the sea ocean with my side turned towards the camera">
       </div>
-      <p>yep, that's me on the left.</p>
+      <div class = "gallery">
+        <img class = "galleryImg"  src="assets/about/crashout.jpg" alt = "Selfie of myself and my friend, where I'm caught midway through moving my head towards the camera creating a blurred effect">
+      </div>
+      <div class = "gallery">
+        <img class = "galleryImg"  src="assets/about/outfit.jpg" alt = "Selfie of my outfit, wearing blue wide-leg jeans and a gray ringer tee, plus a shoulder bag.">
+      </div>
+      <div class = "gallery">
+        <img class = "galleryImg"  src="assets/about/rome.jpg" alt = "0.5 angle selfie of myself on one of the highest levels of the Colosseum, wearing a gray shirt and white pants. The uppper left corner shows a view of the insider of the Colosseum.">
+      </div>
+  
+      <!-- command courtesy of Copilot-->
+      <div style = "clear: both;"></div>
+      
+      <p>yep, that's me.</p>
       <section>
       <!-- basic information about me -->
         <h3>well to start off, here's some basic information about me:</h3>
-        <ul class = "leftText">
-          <li>i am a rising high school senior (class of 2026) </li>
-          <li>i'm in MA (yes, the state of the american revolution 🦅🦅🦅🦅🦅)</li>
-          <li>i'm born and raised in the US, but my parents are from HK, so i speak cantonese at home</li>
-          <li>siblings: 🙅‍♀️. pets: 🙅‍♀️. but i would like to have a cat and/or dog when i'm older. </li>
+        <ul>
+          <li>  ✦  i am a rising high school senior (class of 2026) </li>
+          <li>  ✦  i'm in MA (yes, the state of the american revolution 🦅🦅)</li>
+          <li>  ✦  i'm born and raised in the US, but my parents are from HK, so i speak cantonese at home</li>
+          <li>  ✦  siblings: 🙅‍♀️. pets: 🙅‍♀️. but i would like to have a cat and/or dog when i'm older. </li>
         </ul>
       </section>
     <!-- recent activity -->
       <section>
         <h3>recent activities</h3>
-        <ul class = "leftText">
-          <li>almost complete with Girls Who Code's Pathways (2025) program! i've finished the Cybersecurity and Data Science + AI tracks' courses, and this personal website is in fact the first course in the Web Development track.</li>
-          <li>just completed MIT's Beaver Works Summer Institute (2025)! Took the Serious Games Development with AI course, and learned a lot of things about coding :) (lost a lot of sleep in the process though...)</li>
-          <li>barely surviving my AP summer work (best example of that is AP Chinese... because my chinese teacher wants us to do 6 separate assignments 🫠 </li>
+        <ul>
+          <li>  ☐  almost complete with Girls Who Code's Pathways (2025) program! i've finished the Cybersecurity and Data Science + AI tracks' courses, and this personal website is in fact the first course in the Web Development track.</li>
+          <li>  ☑  just completed MIT's Beaver Works Summer Institute (2025)! Took the Serious Games Development with AI course, and learned a lot of things about coding :) (lost a lot of sleep in the process though...)</li>
+          <li>  ☒  barely surviving my AP summer work (best example of that is AP Chinese... because my chinese teacher wants us to do 6 separate assignments 🫠 </li>
         </ul>
       </section>
       <!-- fun facts -->
       <section >
-        <h3>interesting tidbits about me</h3>
-        <p>oh and yes this is the same as the info on my homepage, but not in java form :)</p>
+        <h3>more interesting tidbits about me</h3>
+        <p>and yes this is the same as the info on my homepage, but not in java form :)</p>
         <ul >
-          <li>i do taekwondo recreationally, and i'm a purple belt.</li>
-          <li>one of my hobbies is fiber arts (which includes crocheting, knitting, and sewing. i like to call it the "trifecta" of fiber arts lol. you can check out some of my stuff on my fiber arts portfolio page!</li>
-          <li>the goal is to go into computational biology. obviously this isn't the most widespread major, if a school i'm applying to doesn't have it, i'll double major biology and computer science.</li>
-          <li>i wouldn't say i'm the most avid linguist, but i speak english, cantonese (at home), mandarin (from school).</li>
-          <li>and then for coding, i'm most familiar with java (thank you ap csa), python (bwsi and girls who code), html, css (obviously, since i am making a website with the languages after all)</li>
-          <li>and of course, i had to struggle with unity for a good while in bwsi and so i can say i'm 10% good at c#. mostly (entirely) because of java though.</li>
+          <li>  ✦  i do taekwondo recreationally, and i'm a purple belt.</li>
+          <li>  ✦  one of my hobbies is fiber arts (which includes crocheting, knitting, and sewing. i like to call it the "trifecta" of fiber arts lol). you can check out some of my stuff on my fiber arts portfolio page!</li>
+          <li>  ✦  the goal is to go into computational biology. obviously this isn't the most widespread major, if a school i'm applying to doesn't have it, i'll double major biology and computer science.</li>
+          <li>  ✦  i wouldn't say i love learning lagnuages, but i speak english, cantonese (at home), mandarin (from school). i also used to try to learn japanese...but school got a little too hard for that.</li>
+          <li>  ✦  and then for coding, i'm most familiar with java (thank you ap csa), python (bwsi and girls who code), html, css (obviously, since i am making a website with the languages after all)</li>
+          <li>  ✦  and of course, i had to struggle with unity for a good while in bwsi and so i can say i'm 10% good at c#. mostly (entirely) because of java though.</li>
         </ul>
       </section>
-      <p>⋘ loading... ⋙</p>
-   </main>  
+        <p>⋘ loading... ⋙</p>
+     </main>  
   </body>
 </html>
