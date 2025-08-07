@@ -160,7 +160,7 @@ section p {
 
 /* STYLE IMAGES */
 .round{
-  border-radius: 50%;
+  border-radius: 25%;
   border: 3px groove white;
   margin: 10px;
 }
