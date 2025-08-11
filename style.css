@@ -3,53 +3,56 @@
   margin: 0px;
   padding: 0px;
   font-family: Monaco, Monospace;
-  color: #402d4d;
+  color: #2A282C;
 }
 
 /* HEADER STYLING */
 .header {
   /*code courtesy of Copilot instructions*/
-  width:100%; /* makes it take up 100% of the screen's width*/
-  height: 150px; 
+  width: 90%; /* makes it take up 100% of the screen's width*/
+  height: 250px; 
   object-fit: cover;
   display: block;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
 /* STYLE NAV BAR */
-nav{
-  border-style: groove;
-  background-color: #56675c;
-  color: #E0F5E6;
-  text-align: center;
-
+#navBar{
+  display: flex;
+  text-align: left;
+  padding: 15px;
 }
 #navUL {
-  list-style-type: none;
-  overflow: hidden;
-  padding: 10px;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 li {
   display: inline;
-  padding-left: 15px;
-  padding-right: 15px;
+  color:#2A282C;
 }
 li a {
-  color: white;
   text-decoration: none;
   font-size: 1.0em;
-  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 li a:hover {
-  background-color: #a0b29f;
+  background-color: #d2ccb6;
+  border-radius: 15px;
 }
 
 
 /* STYLE SECTIONING TAGS */
 body {
   /*image created with Colorffy's Mesh Gradient generator, implemented with the help of Copilot & W3Schools*/
-  background-image: url("assets/background.png");
+  /*background-image: url("assets/background.png");*/
+  background-color: #F4F1DE;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -163,4 +166,11 @@ section p {
   border-radius: 25%;
   border: 3px groove white;
   margin: 10px;
+}
+
+#classLogo{
+  display:flex;
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
 }
