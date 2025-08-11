@@ -1,4 +1,14 @@
 /* .js files add interaction to your website */
+
+/* INDEX ANIMATIONS */
+
+var mainCode = document.getElementById("mainCode");
+mainCode.addEventListener("click", openMain);
+var mainOpen = false;
+
+var runButton = document.getElementById("runButton");
+runButton.addEventListener("click", runCode);
+
 var translateIndex = 0;
 var welcomeText = [
     "⋆.˚✮🎧✮˚.⋆  hello! i'm jana leung, welcome to my corner :\)\nfeel free to look around, and relax\!\nthis is a personal website, so it doesn't have any specific theme or purpose\.\n\(pssst, if you want more information/to contact me, you can click my logo...)",
@@ -10,6 +20,26 @@ var translateText = document.getElementById("translatable");
 var translateButton = document.getElementById("translateButton");
 
 translateButton.addEventListener("click", changeLanguage);
+
+function openMain() {
+    if (!mainOpen) {
+        mainCode.innerHTML = "public static void main(String[] args) {<br>&nbsp&nbsp&nbsp&nbspString message = Messages.welcomeEnglish();<br>&nbsp&nbsp&nbsp&nbspSystem.out.println(message);<br>}";
+    } else {
+        mainCode.innerHTML = "public static void main(String[] args) {}";
+    }
+}
+
+function runCode() {
+    // chage run button text
+
+    if (runButton.innerHTML == "Run ►") {
+        runButton.innerHTML = "Stop ■";
+        changeLanguage();
+    } else if (runButton.innerHTML == "Stop ■") {
+        runButton.innerHTML = "Run ►";
+        translateText.innerHTML = "";
+    }
+}
 
 function changeLanguage() {
     translateIndex++;
