@@ -145,12 +145,42 @@ button:hover {
   padding-right: 50px;
   z-index: 1;
 }
+#fakeIDE {
+  display: flex;
+}
+#codeSide {
+  color: #F4F1DE;
+  width: 60%;
+  height: auto;
+  background-color: #2A282C;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+#console {
+  color: #F4F1DE;
+  background-color: #3D405B;
+  width: 40%;
+}
+.codeLine {
+  margin: 0px;
+  padding: 0px;
+  color: #F4F1DE;
+  text-align: left;
+}
 .codeLink {
+  display:block;
   text-align: left;
   text-decoration-line: none;
+  margin: 0px;
+  padding: 0px;
+  color: #F4F1DE;
 }
 .codeLink:hover {
-  background-color: #d2ccb6;
+  background-color: #3D405B;
+}
+#translatable {
+  color: #F4F1DE
 }
 
 /* ABOUT ME */

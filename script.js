@@ -1,7 +1,6 @@
 /* .js files add interaction to your website */
 
 /* INDEX ANIMATIONS */
-
 var mainCode = document.getElementById("mainCode");
 mainCode.addEventListener("click", openMain);
 var mainOpen = false;
@@ -9,7 +8,7 @@ var mainOpen = false;
 var runButton = document.getElementById("runButton");
 runButton.addEventListener("click", runCode);
 
-var translateIndex = 0;
+var translateIndex = -1;
 var welcomeText = [
     "⋆.˚✮🎧✮˚.⋆  hello! i'm jana leung, welcome to my corner :\)\nfeel free to look around, and relax\!\nthis is a personal website, so it doesn't have any specific theme or purpose\.\n\(pssst, if you want more information/to contact me, you can click my logo...)",
     "⋆.˚✮🎧✮˚.⋆  你好! 我叫梁靜悠，欢迎来到我的网站 :)\nok big disappoint... my chinese is not that good. sorry, i am NOT translating the rest of what i wrote in english, i am so illiterate. genuinely.",
@@ -18,15 +17,19 @@ var welcomeText = [
 
 var translateText = document.getElementById("translatable");
 var translateButton = document.getElementById("translateButton");
+translateButton.style.display = "none";
+
 
 translateButton.addEventListener("click", changeLanguage);
 
 function openMain() {
     if (!mainOpen) {
-        mainCode.innerHTML = "public static void main(String[] args) {<br>&nbsp&nbsp&nbsp&nbspString message = Messages.welcomeEnglish();<br>&nbsp&nbsp&nbsp&nbspSystem.out.println(message);<br>}";
+        mainCode.innerHTML = "&nbsp&nbsppublic static void main(String[] args) {<br>&nbsp&nbsp&nbsp&nbspString message = Messages.welcomeEnglish();<br>&nbsp&nbsp&nbsp&nbspSystem.out.println(message);<br>&nbsp&nbsp}";
     } else {
-        mainCode.innerHTML = "public static void main(String[] args) {}";
+        mainCode.innerHTML = "&nbsp&nbsppublic static void main(String[] args) {}";
     }
+    mainOpen = !mainOpen;
+
 }
 
 function runCode() {
@@ -35,9 +38,12 @@ function runCode() {
     if (runButton.innerHTML == "Run ►") {
         runButton.innerHTML = "Stop ■";
         changeLanguage();
+        translateButton.style.display = "block";
     } else if (runButton.innerHTML == "Stop ■") {
         runButton.innerHTML = "Run ►";
         translateText.innerHTML = "";
+        translateButton.style.display = "none";
+        translateIndex = -1;
     }
 }
 

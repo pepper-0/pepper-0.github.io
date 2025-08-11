@@ -45,27 +45,29 @@
         <h1>hi, i'm Jana.</h1>
       </div>
 
-      <section class = "subSection">
+      <div id = "fakeIDE">
+        <section id = "codeSide" class = "subSection">
           <!-- WIP: end result will use js to make it look like an IDE with a 'collapsible panel' that links to the page-->
-          <button id = "runButton">Run ►</button>
-          <p>
-          public class JanaHome {
-          </p>
-          <p class = "codeLink" id = "mainCode">public static void main(String[] args) {</p>
-          <a class = "codeLink" href = "about.html">
-            <p>public void showAboutMe() {}</p>
-          </a>
-          <a class = "codeLink" href = "fiber_arts.html">    public void showFiberArtsPortfolio() {}<br></a>
-          <a class = "codeLink" href = "code.html">    public void showCodeProjects() {}<br></a>
-          <a class = "codeLink">    public String showContacts() {}<br></a>
-          <p>}</p>
-          <p> /* side tangent, i'm making this site cause i want a personal website + it's a girls who code project! surprisingly, it hasn't been going TOO awful.. yet. */</p>
+            <button id = "runButton">Run ►</button>
+              <p class = "codeLine">
+              public class JanaHome {
+              </p>
+              <p class = "codeLink" id = "mainCode">&nbsp;&nbsp;public static void main(String[] args) {</p>
+              <a class = "codeLink" href = "about.html">&nbsp;&nbsp;public void showAboutMe() {}</a>
+              <a class = "codeLink" href = "fiber_arts.html">&nbsp;&nbsp;public void showFiberArtsPortfolio() {}</a>
+              <a class = "codeLink" href = "code.html">&nbsp;&nbsp;public void showCodeProjects() {}</a>
+              <a class = "codeLink">&nbsp;&nbsp;public void showContacts() {}</a>
+              <p class = "codeLine">}</p>
+              <p class = "codeLine"> /* side tangent, i'm making this site cause i want a personal website + it's a girls who code project! surprisingly, it hasn't been going TOO awful.. yet. */</p>
+          
           </section>
-      <section>
-        <p class = "leftText" id = "translatable">
-        </p>
-        <button class = "centerText" id = "translateButton"> translate </button>        
-      </section>
+          <section id = "console">
+            <p id = "translatable"></p>
+            <button id = "translateButton"> translate </button>        
+          </section>
+      </div>
+      
+      
     </main>
   </body>
 </html>
