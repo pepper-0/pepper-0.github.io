@@ -44,6 +44,13 @@ section {
 }
 
 /* GENERAL TEXT STYLING */
+h1 {
+  font-family: 'TKindred', sans-serif;
+  font-size: 2.5em;
+  color: #3D405B;
+  text-shadow: 2px 2px #d2ccb6;
+  padding: 10px;
+}
 h3 {
   padding: 10px;
 }
@@ -248,16 +255,60 @@ section p {
 }
 
 /* PORTFOLIOS */
+.descriptionAndView {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.description {
+  width: 80%;
+  text-align: left;
+  margin-left: 10px;
+}
+.contentViewDropDown {
+  width: 20%;
+}
+.contentViewButton {
+  margin: 0px;
+  width: 100%;
+}
+.contentViewOptions {
+  display: none;
+}
+.contentViewDropDown:hover .contentViewOptions {
+  display: block;
+
+}
+.contentViewOptions a {
+  background-color: #F4F1DE;
+  border-radius: 10px;
+  width: 100%;
+}
+.contentViewOptions a:hover {
+  background-color: #d2ccb6;
+}
+
+.projectCard {
+  transition: transform 0.3s ease-in-out;
+}
+.projectCard:hover {
+  transform: scale(1.025);
+}
 .link {
-  border-color: #d4d0d8;
+  border-color: #B4C3AF;
   border-width: 2px;
   border-style: double;
+  border-radius: 10px;
   padding: 10px;
   display: inline-block;
   margin-bottom: 10px;
 }
 section a:hover, a:active {
-  background-color: #d4d0d8;
+  background-color: #B4C3AF;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+
+
 }
 .portfolioImg {
   display: inline-block;
