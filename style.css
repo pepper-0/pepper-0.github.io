@@ -71,6 +71,32 @@ button:hover {
   background-color: #d2ccb6;
 }
 
+/* FOOTER */
+.footer {
+  text-align: center;
+}
+.contactInfo {
+  display: flex;
+  justify-content: center;
+}
+.footerText {
+  font-size: 0.6em;
+}
+.footerFineText {
+  font-size: 0.4em;
+}
+.contactIcon {
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.contactIcon:hover {
+  transform: scale(1.25);
+  transition: transform 0.2s ease-in-out;
+}
+
 /* STYLE NAV BAR */
 #navBar{
   display: flex;
@@ -106,8 +132,8 @@ button:hover {
   margin-right: 10px;
 }
 #classLogo:hover{
-  transform: scale(1.1);
-  margin-right: 15px; /* adds animation to "slide" rest of bar further to right */
+  transform: scale(1.25);
+  margin-right: 20px; /* adds animation to "slide" rest of bar further to right */
 }
 
 /* HOME */
@@ -134,7 +160,7 @@ button:hover {
   transition: filter 0.2s ease-in-out;
 }
 #introBox:hover .introImg {
-  filter: blur(2px);
+  filter: blur(5px);
 }
 #introBox h1 {
   font-family: 'TKindred', sans-serif;
@@ -147,6 +173,7 @@ button:hover {
 }
 #fakeIDE {
   display: flex;
+  margin-top: 10px;
 }
 #codeSide {
   color: #F4F1DE;
@@ -157,10 +184,18 @@ button:hover {
   padding-right: 15px;
   padding-bottom: 15px;
 }
-#console {
+#codeSide:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+#consoleSide {
   color: #F4F1DE;
   background-color: #3D405B;
   width: 40%;
+}
+#consoleSide:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 .codeLine {
   margin: 0px;
@@ -181,6 +216,10 @@ button:hover {
 }
 #translatable {
   color: #F4F1DE
+}
+#translateButton {
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 /* ABOUT ME */

@@ -10,9 +10,9 @@ runButton.addEventListener("click", runCode);
 
 var translateIndex = -1;
 var welcomeText = [
-    "⋆.˚✮🎧✮˚.⋆  hello! i'm jana leung, welcome to my corner :\)\nfeel free to look around, and relax\!\nthis is a personal website, so it doesn't have any specific theme or purpose\.\n\(pssst, if you want more information/to contact me, you can click my logo...)",
-    "⋆.˚✮🎧✮˚.⋆  你好! 我叫梁靜悠，欢迎来到我的网站 :)\nok big disappoint... my chinese is not that good. sorry, i am NOT translating the rest of what i wrote in english, i am so illiterate. genuinely.",
-    "⋆.˚✮🎧✮˚.⋆  你好！我是梁靜悠，欢迎来到我的小角落 :)\n随便看看, 放松一下!\n这是一个个人网站，所以没有特别的主题或目的。\n（嘘，如果你想要更多信息/联系我，可以点击我的logo…）\n (Credits to Google Translate)"
+    "><br>> ⋆.˚✮🎧✮˚.⋆  hello! i'm jana leung, welcome to my corner :)<br>> feel free to look around, and relax!<br>> this is a personal website, so it doesn't have any specific theme or purpose.<br>> (pssst, if you want more information/to contact me, you can click my logo...)",
+    "><br>> ⋆.˚✮🎧✮˚.⋆  你好! 我叫梁靜悠，欢迎来到我的网站 :)<br>> ok big disappoint... my chinese is not that good. sorry, i am NOT translating the rest of what i wrote in english, i am so illiterate. genuinely.",
+    "><br>> ⋆.˚✮🎧✮˚.⋆  你好！我是梁靜悠，欢迎来到我的小角落 :)<br>> 随便看看, 放松一下!<br>> 这是一个个人网站，所以没有特别的主题或目的。<br>> （嘘，如果你想要更多信息/联系我，可以点击我的logo…）<br>>  (Credits to Google Translate...listen, I can speak but I can't read/write well...)"
 ]
 
 var translateText = document.getElementById("translatable");
