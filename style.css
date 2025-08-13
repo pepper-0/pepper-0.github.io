@@ -284,17 +284,59 @@ section p {
 }
 #bagItemInfo {
   min-height: 50px;
+
 }
-#bagItemInfo h1 {
+#myBagSection h1 {
   font-size: 1.0em;
   margin: 10px;
   padding: 0px;
 }
-#bagItemInfo li {
+#myBagSection li {
   text-shadow: none;
   font: 0.8em 'Monaco', monospace;
   margin: 0px;
   padding: 0px;
+}
+#clickableItemArea {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 100px);
+}
+#waterbottle{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#glasses {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#phone {
+  grid-column-start: -1;
+  grid-column-end: 1;
+  grid-row-start: -1;
+  grid-row-end: 3;
+}
+#headphones {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: -1;
+}
+#project {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: -1;
+  grid-row-end: 2;
+}
+#wallet {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: -1;
+  grid-row-end: 2;
 }
 
 
