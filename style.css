@@ -267,6 +267,7 @@ section p {
 }
 #bag {
   width: 60%;
+  margin: auto;
   padding: 10px;
   transition: transform 0.2s ease-in-out;
 }
@@ -275,15 +276,19 @@ section p {
   cursor: pointer;
 }
 .bagItem {
-  width: 200px;
   display: none;
-  transition:transform 0.2s ease-in-out;
+  padding: 5px;
+  transition: transform 0.2s ease-in-out;
 }
 .bagItem:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 #bagItemInfo {
   min-height: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 #myBagSection h1 {
@@ -297,46 +302,75 @@ section p {
   margin: 0px;
   padding: 0px;
 }
+#myBagSection {
+  padding: 20px;
+}
+#allItems {
+  display:flex;
+}
 #clickableItemArea {
+  width: 100%;
   display: grid;
+  padding: 25px;
+  align-items: center;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 100px);
 }
 #waterbottle{
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  height: 100%;
+  width: auto;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start:3;
+  grid-row-end: 5;
 }
 #glasses {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  height: 75%;
+  width: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 #phone {
-  grid-column-start: -1;
-  grid-column-end: 1;
-  grid-row-start: -1;
+  height: 90%;
+  width: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
   grid-row-end: 3;
 }
 #headphones {
+  height: 100%;
+  width: auto;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 #project {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: -1;
-  grid-row-end: 2;
+  height: 100%;
+  width: auto;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 #wallet {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: -1;
-  grid-row-end: 2;
+  height: 65%;
+  width: auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#lanyard {
+  height: 70%;
+  width: auto;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
 

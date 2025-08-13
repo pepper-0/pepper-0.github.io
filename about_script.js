@@ -1,21 +1,40 @@
 /* ABOUT ANIMATIONS */
 var bag = document.getElementById("bag");
 bag.addEventListener("click", showBagItems);
+
+var clickableItemArea = document.getElementById("clickableItemArea");
+clickableItemArea.style.display = "none";
+
+var bagItemInfo = document.getElementById("bagItemInfo");
+
 var waterbottle = document.getElementById("waterbottle");
 var glasses = document.getElementById("glasses");
 var phone = document.getElementById("phone");
 var headphones = document.getElementById("headphones");
 var project = document.getElementById("project");
 var wallet = document.getElementById("wallet");
+var lanyard = document.getElementById("lanyard");
 
 
 
 var bagItemInfo = document.getElementById("bagItemInfo");
 
-var bagItems = [waterbottle, glasses, phone, headphones, project, wallet];
+var bagItems = [waterbottle, glasses, phone, headphones, project, wallet, lanyard];
 
 function showBagItems() {
     console.log("bag clicked");
+    /*shrink bag */
+    // bag.style.transform = "translate(-25%, -25%)";
+    // bag.style.transition = "transform 0.5s ease-in-out";
+    /* currently the transition is really janky over here because it auto adjusts the width  */
+    bag.style.margin = "0";
+    bag.style.padding = "0";
+    bag.style.width = "15%";
+    bag.style.height = "15%";
+    /*make other elements appear*/
+    clickableItemArea.style.display = "grid";
+    clickableItemArea.style.width = "75%";
+    bagItemInfo.style.display = "block";
     bagItems.forEach(function(item) {
         item.style.display = "block";
     });
@@ -38,4 +57,7 @@ project.addEventListener("click", function showProjectInfo() {
 });
 wallet.addEventListener("click", function showWalletInfo() {
     bagItemInfo.innerHTML = "<h1>wallet<h1><p>some basic info about me<p><ul><li>✦ located: MA (born and raised)</li><li>✦ i'm chinese (both parents are from hong kong)</li><li>✦ languages: english (ofc), cantonese, and mandarin. i wouldn't say i love learning languages but i have also tried to learn japanese in the past ¯\_(ツ)_/¯</li><li>✦ siblings: 0, sadly</li><li>✦ pets: 0, even more sadly. i would like both a cat and a dog in the future</li><li>✦ grade: rising high school senior (bound to change on 8/27, in which i will be an actual senior and this will be outdated information..)</li><li>✦ aspiring major: computational biology (or double major in cs + bio)</li></ul>";
+});
+lanyard.addEventListener("click", function showLanyardInfo() {
+    bagItemInfo.innerHTML = "<h1>lanyard<h1><ul><li>✦ when i'm driving, this is where i put my car keys! </li><li>✦ this lanyard's from Beaver Works Summer Institute-- i was in Serious Games with AI (2025)</li><li>✦ i have a boxing glove keychain too! i'm not a boxer, but i practice taekwondo recreationally :)</li></ul>";
 });
