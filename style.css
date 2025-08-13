@@ -253,6 +253,50 @@ section p {
   margin-bottom: 7%;
   border-radius: 15px;
 }
+#myBag {
+  background-color: #d2ccb6;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: groove;
+  margin-top: 29px;
+  padding: 20px;
+}
+#myBag h1 {
+  font-size: 1.5em;
+  margin: 5px;
+}
+#bag {
+  width: 60%;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+#bag:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.bagItem {
+  width: 200px;
+  display: none;
+  transition:transform 0.2s ease-in-out;
+}
+.bagItem:hover {
+  transform: scale(1.1);
+}
+#bagItemInfo {
+  min-height: 50px;
+}
+#bagItemInfo h1 {
+  font-size: 1.0em;
+  margin: 10px;
+  padding: 0px;
+}
+#bagItemInfo li {
+  text-shadow: none;
+  font: 0.8em 'Monaco', monospace;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 /* PORTFOLIOS */
 .descriptionAndView {
