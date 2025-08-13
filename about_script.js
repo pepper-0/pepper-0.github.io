@@ -2,6 +2,8 @@
 var bag = document.getElementById("bag");
 bag.addEventListener("click", showBagItems);
 
+var bagInstructions = document.getElementById("bagInstructions");
+
 var clickableItemArea = document.getElementById("clickableItemArea");
 clickableItemArea.style.display = "none";
 
@@ -15,14 +17,14 @@ var project = document.getElementById("project");
 var wallet = document.getElementById("wallet");
 var lanyard = document.getElementById("lanyard");
 
-
-
 var bagItemInfo = document.getElementById("bagItemInfo");
+bagItemInfo.style.display = "none";
 
 var bagItems = [waterbottle, glasses, phone, headphones, project, wallet, lanyard];
 
 function showBagItems() {
     console.log("bag clicked");
+    bagInstructions.innerHTML = "<p>✮˚.⋆ awesome! click on an item to learn more about it!</p>";
     /*shrink bag */
     // bag.style.transform = "translate(-25%, -25%)";
     // bag.style.transition = "transform 0.5s ease-in-out";
@@ -53,7 +55,7 @@ headphones.addEventListener("click", function showHeadphonesInfo() {
     bagItemInfo.innerHTML = "<h1>headphones<h1><ul><li>✦ some artists i listen to: ichiko aoba, laufey, clairo, steve lacy, lamp, men i trust, the marias</li><li>✦ i also listen to these (especially when i'm doing work): instrumental jazz, prokofiev's romeo and juliet, sense & sensibility's ost, dramatic classical music</li></ul>";
 });
 project.addEventListener("click", function showProjectInfo() {
-    bagItemInfo.innerHTML = "<h1>knitting project<h1><ul><li>✦ one of my hobbies is fiber arts (for me, it includes but is not limited to crocheting, knitting, and sewing!)</li><li>✦ this is a shrug i've been working on on and off</li><li>✦ i like to work on my projects when i need something to do with my hands (e.g. in class lectures)</li></ul><p>pssst. you can check out some of my projects in my arts portfolio page :)</p>";
+    bagItemInfo.innerHTML = "<h1>knitting project<h1><ul><li>✦ one of my hobbies is fiber arts (for me, it includes but is not limited to crocheting, knitting, and sewing!)</li><li>✦ this is a shrug i've been working on on and off</li><li>✦ i like to work on my projects when i need something to do with my hands (e.g. in class lectures)</li></ul><li> ✮˚.⋆ pssst. you can check out some of my projects in my arts portfolio page :)</li>";
 });
 wallet.addEventListener("click", function showWalletInfo() {
     bagItemInfo.innerHTML = "<h1>wallet<h1><p>some basic info about me<p><ul><li>✦ located: MA (born and raised)</li><li>✦ i'm chinese (both parents are from hong kong)</li><li>✦ languages: english (ofc), cantonese, and mandarin. i wouldn't say i love learning languages but i have also tried to learn japanese in the past ¯\_(ツ)_/¯</li><li>✦ siblings: 0, sadly</li><li>✦ pets: 0, even more sadly. i would like both a cat and a dog in the future</li><li>✦ grade: rising high school senior (bound to change on 8/27, in which i will be an actual senior and this will be outdated information..)</li><li>✦ aspiring major: computational biology (or double major in cs + bio)</li></ul>";

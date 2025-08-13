@@ -36,6 +36,7 @@ section {
   background-color: #73947f;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 .subSection {
   margin-top: 10px;
@@ -50,6 +51,12 @@ h1 {
   color: #3D405B;
   text-shadow: 2px 2px #d2ccb6;
   padding: 10px;
+}
+.sectionTitle {
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 0px;
+  text-shadow: 2px 2px #F4F1DE;
 }
 h3 {
   padding: 10px;
@@ -243,9 +250,38 @@ section ul {
 section p {
   text-align: left;
 }
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 6px;
+  justify-content: center;
+}
+.gallery {
+  box-sizing: border-box;
+  display: inline;
+  margin: 3px;
+  border: 2px groove #ffffff;
+  background-color: #AE9797;
+  float: left;
+  border-radius: 20px;
+  width: 20%;
+  max-width: 170px;
+  height: auto;
+}
+.galleryDesc {
+  display: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.4em;
+}
+.gallery:hover .galleryDesc{
+  display: block;
+}
+
 .galleryImg {
   margin: auto;
   width: 90%;
+  max-width: 150px;
   height: auto;
   margin-left: 5%;
   margin-right: 5%;
@@ -266,7 +302,7 @@ section p {
   margin: 5px;
 }
 #bag {
-  width: 60%;
+  width: 50%;
   margin: auto;
   padding: 10px;
   transition: transform 0.2s ease-in-out;
@@ -289,12 +325,8 @@ section p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
-}
-#myBagSection h1 {
-  font-size: 1.0em;
-  margin: 10px;
-  padding: 0px;
+  background-color: #F4F1DE;
+  font-size: 0.5em;
 }
 #myBagSection li {
   text-shadow: none;
@@ -304,11 +336,14 @@ section p {
 }
 #myBagSection {
   padding: 20px;
+  background-color: #d2ccb6;
 }
 #allItems {
   display:flex;
 }
 #clickableItemArea {
+  background-color: transparent;
+  border-style: none;
   width: 100%;
   display: grid;
   padding: 25px;
@@ -440,24 +475,3 @@ section a:hover, a:active {
   border-radius: 10px;
 }
 /* code adapted from W3Schools example/tutorial*/
-.galleryContainer {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 6px;
-  justify-content: center;
-}
-div.gallery {
-  box-sizing: border-box;
-  display: inline;
-  margin: 3px;
-  border: 2px groove #ffffff;
-  background-color: #AE9797;
-  float: left;
-  border-radius: 20px;
-  width: 20%;
-  height: auto;
-}
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
