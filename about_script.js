@@ -26,24 +26,26 @@ function showBagItems() {
     console.log("bag clicked");
     bagInstructions.innerHTML = "<p>✮˚.⋆ awesome! click on an item to learn more about it!</p>";
     /*shrink bag */
-    // bag.style.transform = "translate(-25%, -25%)";
+    // bag.style.transform = "scale(0.5)";
     // bag.style.transition = "transform 0.5s ease-in-out";
     /* currently the transition is really janky over here because it auto adjusts the width  */
+    bag.src = "./assets/about/bag-display/bag_open.png";
     bag.style.margin = "0";
     bag.style.padding = "0";
-    bag.style.width = "15%";
+    bag.style.width = "25%";
     bag.style.height = "15%";
     /*make other elements appear*/
     clickableItemArea.style.display = "grid";
     clickableItemArea.style.width = "75%";
     bagItemInfo.style.display = "block";
+    bagItemInfo.innerHTML = "<h1>read here to learn more!<h1>";
     bagItems.forEach(function(item) {
         item.style.display = "block";
     });
 }
 
 waterbottle.addEventListener("click", function showWaterbottleInfo() {
-        bagItemInfo.innerHTML = "<h1>water bottle<h1><ul><li>✦ i used to hate drinking water but after getting a water bottle i actually like, i actually hydrate now :D</li><li>✦ when i feel like i need a little caffeine boost, i'll also put in a green tea bag inside (copied it after my friend that got me hooked on green tea)</li><li>✦ occasionally i also like to drink boba, but my mom insists not getting it too often cause of how expensive it is 🥀 </li></ul>";
+    bagItemInfo.innerHTML = "<h1>water bottle<h1><ul><li>✦ i used to hate drinking water but after getting a water bottle i genuinely like, i actually hydrate now :D</li><li>✦ when i feel like i need a little caffeine boost, i'll also put in a green tea bag inside (copied it after my friend that got me hooked on green tea)</li><li>✦ occasionally i also like to drink boba, but my mom insists not getting it too often cause of how expensive it is 🥀 </li></ul>";
 });
 glasses.addEventListener("click", function showGlassesInfo() {
     bagItemInfo.innerHTML = "<h1>blue light glasses<h1><ul><li>✦ i got these glasses recently because of a) senior year b) lots of late coding nights lately..</li><li>✦ i'm mostly familiar with java (ap csp), python (bwsi and girls who code), html, css, and javascript (naturally, given that i am making a website after all :) )</li><li>✦ also i've dabbled with unity too! not the greatest at it though</li></ul>";

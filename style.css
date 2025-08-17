@@ -429,18 +429,24 @@ section p {
 }
 .contentViewOptions {
   display: none;
+  text-align: center;
 }
 .contentViewDropDown:hover .contentViewOptions {
   display: block;
 
 }
 .contentViewOptions a {
-  background-color: #F4F1DE;
-  border-radius: 10px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 15px;
+  padding:5px;
+  margin-top: 5px;
+  width: 75%;
 }
 .contentViewOptions a:hover {
   background-color: #d2ccb6;
+  cursor: pointer;
 }
 
 .projectCard {
@@ -468,10 +474,17 @@ section a:hover, a:active {
 .portfolioImg {
   display: inline-block;
   margin: auto;
-  height: 300px;
-  width: auto;
+  width: 80%;
+  height: auto;
+  max-height: 500px;
+
   object-fit: cover;
   margin: 10px;
   border-radius: 10px;
+}
+.projectDescs {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 /* code adapted from W3Schools example/tutorial*/
