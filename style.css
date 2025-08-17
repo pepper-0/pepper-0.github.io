@@ -10,7 +10,7 @@
 *{
   margin: 0px;
   padding: 0px;
-  font-family: Monaco, Monospace;
+  font-family: "Monaco", Monospace;
   color: #2A282C;
 }
 
@@ -497,9 +497,9 @@ section p {
 .projectName {
   font-size: 1.2em;
   text-shadow: 2px 2px #F4F1DE;
-  white-space: nowrap;
+  /* white-space: nowrap;
   text-overflow: ellipsis; 
-  overflow: hidden;
+  overflow: hidden; */
 }
 .projectTime {
   display: block;
