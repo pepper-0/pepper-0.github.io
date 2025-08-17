@@ -455,6 +455,11 @@ section p {
 
 .projectCard {
   transition: transform 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
 }
 .projectCard:hover {
   background-color: #8caa98;
@@ -466,8 +471,10 @@ section p {
   border-style: double;
   border-radius: 10px;
   padding: 10px;
-  display: inline-block;
-  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 .link:hover, .link:active {
   background-color: #B4C3AF;
@@ -476,14 +483,15 @@ section p {
   cursor: pointer;
 }
 .portfolioImg {
-  display: inline-block;
+  display: block;
   margin: auto;
-  width: 80%;
+  max-width: 50%;
   height: auto;
-  max-height: 500px;
-
-  object-fit: cover;
-  margin: 10px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 .projectName {
@@ -494,11 +502,12 @@ section p {
   overflow: hidden;
 }
 .projectTime {
-  display: inline-block;
+  display: block;
   text-align: left;
 }
 .projectDesc {
-  display: inline-block;
+  display: block;
+  text-align: left;
   height: 100%;
   width: 100%;
 }
