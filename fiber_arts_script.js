@@ -7,8 +7,6 @@ var currentView = 0;
 listView.addEventListener("click", switchToList);
 iconView.addEventListener("click", switchToIcon);
 
-var exampleCard = document.getElementById("exampleCard");
-
 var projectCards = document.getElementsByClassName("projectCard");
 var projectNames = document.getElementsByClassName("projectName");
 var projectDates = document.getElementsByClassName("projectDate");
@@ -19,119 +17,139 @@ var links = document.getElementsByClassName("link");
 
 function switchToList() {
     currentView = 1;
-    console.log("Switching to list view");
-    exampleCard.style.display = "block";
     for (var i = 0; i < projectCards.length; i++) {
-        projectCards[i].style.maxHeight = "75px";
-        projectCards[i].style.display = "flex";
-        projectCards[i].style.flexDirection = "row";
-
-        // remove date and links
-        projectDates[i].style.display = "none";
-        if (links[i]) {
-            links[i].style.display = "none";
-        }
-
-        // padding
-        projectCards[i].style.padding = "0px"; // or your preferred value
-
-        // space ratios
-        projectNames[i].style.width = "15%";
-        projectNames[i].style.marginRight = "2.5%";
-        projectNames[i].style.marginLeft = "2.5%";
-        projectDescs[i].style.width = "55%";
-        projectDescs[i].style.marginRight = "2.5%";
-        projectDescs[i].style.marginLeft = "2.5%";
-        portfolioImgs[i].style.width = "15%";
-        portfolioImgs[i].style.marginRight = "2.5%";
-        portfolioImgs[i].style.marginLeft = "2.5%";
-
-        // title
-        projectNames[i].style.font = "1.0em 'Monaco', monospace";
-        projectNames[i].style.fontWeight = "bold";
-        projectNames[i].style.textShadow = "none";     
-
-        // images
-        portfolioImgs[i].style.maxHeight = "100%";
-        portfolioImgs[i].style.marginLeft = "auto";
-        portfolioImgs[i].style.objectFit = "cover";
-
-        // descs
-        projectDescs[i].style.overflow = "hidden";
-        projectDescs[i].style.textOverflow = "ellipsis";
-        projectDescs[i].style.whiteSpace = "nowrap";
-    
-        // additional modifications given by gh copilot
-        projectCards[i].style.flexDirection = "row";
-        projectNames[i].style.display = "inline-block";
-        projectDescs[i].style.display = "inline-block";
-        portfolioImgs[i].style.display = "inline-block";
-        projectNames[i].style.marginRight = "2.5%";
-        projectNames[i].style.marginLeft = "2.5%";
-        projectDescs[i].style.marginRight = "2.5%";
-        projectDescs[i].style.marginLeft = "2.5%";
-        portfolioImgs[i].style.marginRight = "2.5%";
-        portfolioImgs[i].style.marginLeft = "2.5%";
-        
+        openList(i);        
     }
-    
+}
 
+function openList(i) {
+    projectCards[i].style.height = "75px";
+    projectCards[i].style.display = "flex";
+    projectCards[i].style.flexDirection = "row";
+    projectCards[i].style.alignItems = "center";
+
+    // remove date and links
+    projectDates[i].style.display = "none";
+    if (links[i]) {
+        links[i].style.display = "none";
+    }
+
+    // padding
+    projectCards[i].style.padding = "0px"; // or your preferred value
+
+    // space ratios
+    projectNames[i].style.width = "15%";
+    projectNames[i].style.marginRight = "2.5%";
+    projectNames[i].style.marginLeft = "2.5%";
+    projectDescs[i].style.width = "55%";
+    projectDescs[i].style.marginRight = "2.5%";
+    projectDescs[i].style.marginLeft = "2.5%";
+    portfolioImgs[i].style.width = "15%";
+    portfolioImgs[i].style.marginRight = "2.5%";
+    portfolioImgs[i].style.marginLeft = "2.5%";
+
+    // title
+    projectNames[i].style.font = "1.0em 'Monaco', monospace";
+    projectNames[i].style.fontWeight = "bold";
+    projectNames[i].style.textShadow = "none";     
+
+    // images
+    portfolioImgs[i].style.height = "75%";
+    portfolioImgs[i].style.marginLeft = "auto";
+    portfolioImgs[i].style.objectFit = "cover";
+
+    // descs
+    projectDescs[i].style.overflow = "hidden";
+    projectDescs[i].style.textOverflow = "ellipsis";
+    projectDescs[i].style.whiteSpace = "nowrap";
+
+    // additional modifications given by gh copilot
+    projectCards[i].style.flexDirection = "row";
+    projectNames[i].style.display = "inline-block";
+    projectDescs[i].style.display = "inline-block";
+    projectDescs[i].style.height = "fit-content";
+    portfolioImgs[i].style.display = "inline-block";
+    projectNames[i].style.marginRight = "2.5%";
+    projectNames[i].style.marginLeft = "2.5%";
+    projectDescs[i].style.marginRight = "2.5%";
+    projectDescs[i].style.marginLeft = "2.5%";
+    portfolioImgs[i].style.marginRight = "2.5%";
+    portfolioImgs[i].style.marginLeft = "2.5%";
 }
 
 function switchToIcon() {
-    console.log("Switching to icon view");
     // essentially reset everything to original css style
     currentView = 0;
-
     for (var i = 0; i < projectCards.length; i++) {
-        projectCards[i].style.height = "auto";
-        projectCards[i].style.display = "inline-block";
-        projectCards[i].style.padding = "10px";
-
-        // title
-        projectNames[i].style.width = "100%";
-        projectNames[i].style.font = "1.2em 'TKindred', sans-serif";
-        projectNames[i].style.fontWeight = "bold";
-        projectNames[i].style.textShadow = "2px 2px #F4F1DE";    
-        projectNames[i].style.display = "block";
-
-
-        // add date and links
-        projectDates[i].style.display = "block";
-        projectDates[i].style.textAlign = "left";
-        if (links[i]) {
-            links[i].style.display = "block";
-            links[i].style.margin = "10px auto";
-        }
-
-        // descriptions
-        projectDescs[i].style.height = "auto";
-        projectDescs[i].style.width = "auto";
-        projectDescs[i].style.overflow = "normal";
-        projectDescs[i].style.textOverflow = "clip";
-        projectDescs[i].style.whiteSpace = "normal";
-        projectDescs[i].style.textAlign = "left";
-
-
-        // images
-        portfolioImgs[i].style.display = "inline-block";
-        portfolioImgs[i].style.width = "80%";
-        portfolioImgs[i].style.margin = "10px auto";
-        portfolioImgs[i].style.height = "auto";
-        portfolioImgs[i].style.maxHeight = "500px";  
-        portfolioImgs[i].style.borderRadius = "10px";
-
-        // additional modifications given by gh copilot
-        projectCards[i].style.maxHeight = "none";
-        projectCards[i].style.flexDirection = "column";
-        projectNames[i].style.marginRight = "0";
-        projectNames[i].style.marginLeft = "0";
-        projectDescs[i].style.marginRight = "0";
-        projectDescs[i].style.marginLeft = "0";
-        portfolioImgs[i].style.marginRight = "0";
-        portfolioImgs[i].style.marginLeft = "0";
-        portfolioImgs[i].style.objectFit = "contain";
-        
-
+        openIcon(i);
     }
+}
+
+projectCards[0].addEventListener("click", open0); 
+projectCards[1].addEventListener("click", open1); 
+projectCards[2].addEventListener("click", open2); 
+projectCards[3].addEventListener("click", open3); 
+
+function open0() {
+    openIcon(0);
+}
+function open1() {
+    openIcon(1);
+}
+function open2() {
+    openIcon(2);
+}
+function open3() {
+    openIcon(3);
+}
+
+
+function openIcon(i) {
+    projectCards[i].style.height = "auto";
+    projectCards[i].style.display = "inline-block";
+    projectCards[i].style.padding = "10px";
+
+    // title
+    projectNames[i].style.width = "100%";
+    projectNames[i].style.font = "1.2em 'TKindred', sans-serif";
+    projectNames[i].style.fontWeight = "bold";
+    projectNames[i].style.textShadow = "2px 2px #F4F1DE";    
+    projectNames[i].style.display = "block";
+
+
+    // add date and links
+    projectDates[i].style.display = "block";
+    projectDates[i].style.textAlign = "left";
+    if (links[i]) {
+        links[i].style.display = "block";
+        links[i].style.margin = "10px auto";
+    }
+
+    // descriptions
+    projectDescs[i].style.height = "auto";
+    projectDescs[i].style.width = "auto";
+    projectDescs[i].style.overflow = "normal";
+    projectDescs[i].style.textOverflow = "clip";
+    projectDescs[i].style.whiteSpace = "normal";
+    projectDescs[i].style.textAlign = "left";
+
+
+    // images
+    portfolioImgs[i].style.display = "inline-block";
+    portfolioImgs[i].style.width = "80%";
+    portfolioImgs[i].style.margin = "10px auto";
+    portfolioImgs[i].style.height = "auto";
+    portfolioImgs[i].style.maxHeight = "500px";  
+    portfolioImgs[i].style.borderRadius = "10px";
+
+    // additional modifications given by gh copilot
+    projectCards[i].style.maxHeight = "none";
+    projectCards[i].style.flexDirection = "column";
+    projectNames[i].style.marginRight = "0";
+    projectNames[i].style.marginLeft = "0";
+    projectDescs[i].style.marginRight = "0";
+    projectDescs[i].style.marginLeft = "0";
+    portfolioImgs[i].style.marginRight = "0";
+    portfolioImgs[i].style.marginLeft = "0";
+    portfolioImgs[i].style.objectFit = "contain";
 }

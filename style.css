@@ -475,6 +475,7 @@ section p {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+  height: fit-content;
 }
 .link:hover, .link:active {
   background-color: #B4C3AF;
