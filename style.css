@@ -436,6 +436,7 @@ section p {
 }
 .contentViewDropDown:hover .contentViewOptions {
   display: block;
+  cursor:pointer;
 
 }
 .contentViewOptions a {
@@ -458,7 +459,6 @@ section p {
 .projectCard:hover {
   background-color: #8caa98;
   transform: scale(1.025);
-  /* cursor:pointer; */
 }
 .link {
   border-color: #B4C3AF;
@@ -473,7 +473,7 @@ section p {
   background-color: #B4C3AF;
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
-  cursor:pointer;
+  cursor: pointer;
 }
 .portfolioImg {
   display: inline-block;
@@ -489,12 +489,17 @@ section p {
 .projectName {
   font-size: 1.2em;
   text-shadow: 2px 2px #F4F1DE;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  overflow: hidden;
 }
-.projectDescs {
+.projectTime {
+  display: inline-block;
+  text-align: left;
+}
+.projectDesc {
+  display: inline-block;
   height: 100%;
   width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 /* code adapted from W3Schools example/tutorial*/
