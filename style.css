@@ -426,6 +426,9 @@ section p {
 .contentViewButton {
   margin: 0px;
   width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .contentViewOptions {
   display: none;
@@ -453,7 +456,9 @@ section p {
   transition: transform 0.3s ease-in-out;
 }
 .projectCard:hover {
+  background-color: #8caa98;
   transform: scale(1.025);
+  /* cursor:pointer; */
 }
 .link {
   border-color: #B4C3AF;
@@ -464,12 +469,11 @@ section p {
   display: inline-block;
   margin-bottom: 10px;
 }
-section a:hover, a:active {
+.link:hover, .link:active {
   background-color: #B4C3AF;
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
-
-
+  cursor:pointer;
 }
 .portfolioImg {
   display: inline-block;
@@ -482,7 +486,13 @@ section a:hover, a:active {
   margin: 10px;
   border-radius: 10px;
 }
+.projectName {
+  font-size: 1.2em;
+  text-shadow: 2px 2px #F4F1DE;
+}
 .projectDescs {
+  height: 100%;
+  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
