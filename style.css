@@ -179,8 +179,9 @@ button:hover {
 #introBox h1 {
   font-family: 'TKindred', sans-serif;
   font-size: 2em;
+  font-weight: normal;
   color: #F4F1DE;
-  text-shadow: 2px 2px #3D405B;
+  text-shadow: 3px 3px #3D405B;
   text-align: left;
   padding-right: 50px;
   z-index: 1;
@@ -264,7 +265,6 @@ section p {
   margin: 3px;
   border: 2px groove #ffffff;
   background-color: #AE9797;
-  float: left;
   border-radius: 20px;
   width: 20%;
   max-width: 170px;
