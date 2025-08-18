@@ -90,6 +90,7 @@ projectCards[1].addEventListener("click", open1);
 projectCards[2].addEventListener("click", open2); 
 projectCards[3].addEventListener("click", open3); 
 projectCards[4].addEventListener("click", open4); 
+projectCards[5].addEventListener("click", open5); 
 
 function open0() {
     openIcon(0);
@@ -105,6 +106,9 @@ function open3() {
 }
 function open4() {
     openIcon(4);
+}
+function open5() {
+    openIcon(5);
 }
 
 
