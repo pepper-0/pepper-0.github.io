@@ -1,4 +1,4 @@
-# Personal Website
+# meet jana: my personal website!
 
 ### Use 🔗
 visit the most recent deployment ([or linked here](https://pepper-0.github.io/index.html))
@@ -12,7 +12,7 @@ This is a personal website project (pepper-0.github.io) made using HTML, CSS, an
 
 ### Purpose ⋆·˚✮ 📍
 - This project was initially created for the Girls Who Code Web Development track, Course 1 (Personal Website Project). 
-- This project is also going to be submitted to the Athena Award program.
+- This project is also going to be submitted to the Athena Award program. [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 - I especially wanted to expand this project not only to gain more experience with HTML/CSS/Javascript, but also because I have wanted to create a personal website for a long time. I hadn't had the skills or time to do so, so with the foundational knowledge given through GWC and incentive by Athena, it pushed me to actually create something I've wanted to make for a long time!
 
 ### Creation Process ⋆·˚✮ 📋
