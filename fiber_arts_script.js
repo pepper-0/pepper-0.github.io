@@ -89,6 +89,7 @@ projectCards[0].addEventListener("click", open0);
 projectCards[1].addEventListener("click", open1); 
 projectCards[2].addEventListener("click", open2); 
 projectCards[3].addEventListener("click", open3); 
+projectCards[4].addEventListener("click", open4); 
 
 function open0() {
     openIcon(0);
@@ -102,19 +103,27 @@ function open2() {
 function open3() {
     openIcon(3);
 }
+function open4() {
+    openIcon(4);
+}
 
 
 function openIcon(i) {
+    // project card
     projectCards[i].style.height = "auto";
-    projectCards[i].style.display = "inline-block";
+    projectCards[i].style.display = "block";
     projectCards[i].style.padding = "10px";
+    projectCards[i].style.maxHeight = "none";
+    projectCards[i].style.flexDirection = "column";
 
     // title
-    projectNames[i].style.width = "100%";
+    projectNames[i].style.width = "auto";
     projectNames[i].style.font = "1.2em 'TKindred', sans-serif";
     projectNames[i].style.fontWeight = "bold";
     projectNames[i].style.textShadow = "2px 2px #F4F1DE";    
     projectNames[i].style.display = "block";
+    projectNames[i].style.marginRight = "0";
+    projectNames[i].style.marginLeft = "0";
 
 
     // add date and links
@@ -127,29 +136,23 @@ function openIcon(i) {
 
     // descriptions
     projectDescs[i].style.height = "auto";
-    projectDescs[i].style.width = "auto";
+    projectDescs[i].style.width = "100%";
     projectDescs[i].style.overflow = "normal";
     projectDescs[i].style.textOverflow = "clip";
     projectDescs[i].style.whiteSpace = "normal";
     projectDescs[i].style.textAlign = "left";
-
-
-    // images
-    portfolioImgs[i].style.display = "inline-block";
-    portfolioImgs[i].style.width = "80%";
-    portfolioImgs[i].style.margin = "10px auto";
-    portfolioImgs[i].style.height = "auto";
-    portfolioImgs[i].style.maxHeight = "500px";  
-    portfolioImgs[i].style.borderRadius = "10px";
-
-    // additional modifications given by gh copilot
-    projectCards[i].style.maxHeight = "none";
-    projectCards[i].style.flexDirection = "column";
-    projectNames[i].style.marginRight = "0";
-    projectNames[i].style.marginLeft = "0";
     projectDescs[i].style.marginRight = "0";
     projectDescs[i].style.marginLeft = "0";
-    portfolioImgs[i].style.marginRight = "0";
-    portfolioImgs[i].style.marginLeft = "0";
+
+    // images
+    portfolioImgs[i].style.display = "block";
+    portfolioImgs[i].style.width = "auto";
+    portfolioImgs[i].style.maxWidth = "50%";
+    portfolioImgs[i].style.margin = "auto";
+    portfolioImgs[i].style.height = "auto";
+    portfolioImgs[i].style.borderRadius = "10px";
+    portfolioImgs[i].style.marginRight = "auto";
     portfolioImgs[i].style.objectFit = "contain";
+    portfolioImgs[i].style.marginLeft = "auto";
+
 }

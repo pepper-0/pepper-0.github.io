@@ -255,10 +255,12 @@ section p {
   flex-wrap: wrap; 
   gap: 6px;
   justify-content: center;
+  align-items: flex-start;
 }
 .gallery {
   box-sizing: border-box;
-  display: inline;
+  display: inline-block;
+  vertical-align: top;
   margin: 3px;
   border: 2px groove #ffffff;
   background-color: #AE9797;
@@ -272,7 +274,7 @@ section p {
   display: none;
   margin: 5px;
   padding: 5px;
-  font-size: 0.4em;
+  font-size: 0.6em;
 }
 .gallery:hover .galleryDesc{
   display: block;
