@@ -1,7 +1,7 @@
 # Personal Website
 
 ### Use 🔗
-visit the most recent deployment ([or linked here] (https://pepper-0.github.io/index.html))
+visit the most recent deployment ([or linked here](https://pepper-0.github.io/index.html))
 
 ### Function ⋆·˚✮ 🚧
 This is a personal website project (pepper-0.github.io) made using HTML, CSS, and Javascript. It includes a homepage, about me, fiber arts portfolio and code project portfolio. The project also has some cool features, like:
@@ -33,9 +33,9 @@ This is a personal website project (pepper-0.github.io) made using HTML, CSS, an
 - My key takeaways are how CSS & HTML are connected, element hierarchy/parent and child elements, and basic JavaScript interactivity with eventListeners
 
 ### Image Attributions ⋆·˚✮ 🖼️
-- Intro Image: [Hayao Miyazaki, Castle in the Sky] (https://goodwallpapers.com/wallpaper/14690/studio-ghibli-dreamy-desktop-4k-wallpaper)
-- Example Image: [Qingbao Meng] (https://unsplash.com/photos/birds-eye-view-photograph-of-green-mountains-01_igFr7hd4)
+- Intro Image: [Hayao Miyazaki, Castle in the Sky](https://goodwallpapers.com/wallpaper/14690/studio-ghibli-dreamy-desktop-4k-wallpaper)
+- Example Image: [Qingbao Meng](https://unsplash.com/photos/birds-eye-view-photograph-of-green-mountains-01_igFr7hd4)
 
 
 ### Contact ⋆·˚✮ 📞
-- since I'm still very new with HTML/CSS/JS, I'm totally open to suggestions! [Let me know!] (https://github.com/pepper-0/pepper-0.github.io/issues)
+- since I'm still very new with HTML/CSS/JS, I'm totally open to suggestions! [Let me know!](https://github.com/pepper-0/pepper-0.github.io/issues)
