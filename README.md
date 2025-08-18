@@ -1,7 +1,7 @@
 # meet jana: my personal website!
 
 ### Use 🔗
-visit the most recent deployment ([or linked here](https://pepper-0.github.io/index.html))
+visit the most recent deployment ([or linked here](https://pepper-0.github.io/meet-jana/))
 
 ### Function ⋆·˚✮ 🚧
 This is a personal website project (pepper-0.github.io) made using HTML, CSS, and Javascript. It includes a homepage, about me, fiber arts portfolio and code project portfolio. The project also has some cool features, like:
