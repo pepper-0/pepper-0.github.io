@@ -1,5 +1,5 @@
 # meet jana: my personal website!
-meet jana is my personal website that I made myself! it's a way for 
+meet jana is my personal website that I made myself! it's a way for people to get to learn more about me :)
 
 ### To Access ⋆·˚✮ 🔗
 visit the most recent deployment ([or linked here](https://pepper-0.github.io/meet-jana/)). no installation/dependencies needed. 
